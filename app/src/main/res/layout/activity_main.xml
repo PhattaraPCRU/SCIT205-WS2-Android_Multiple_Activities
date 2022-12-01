@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/mong"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="50dp"
+
+        tools:ignore="ContentDescription,MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Introduce"
+        android:textSize="30dp"
+        android:textColor="#220044"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_intro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="NextPageIntro"
+
+        android:text="Phattara"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="15dp"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Information"
+        android:textColor="#220044"
+        android:textSize="30dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="5dp"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="NextPage1"
+
+        android:text="COM"
+        android:textSize="25dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="15dp"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="CS PCRU"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#220044"
+
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="5dp"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="NextPage2"
+
+        android:text="CS PCRU"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="normal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="20dp"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
